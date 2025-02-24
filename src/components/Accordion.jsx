@@ -1,7 +1,10 @@
 // source: https://react.dev/learn/sharing-state-between-components
+import { useState } from 'react';
 import AccordionPanel from './AccordionPanel'
 
 export default function Accordion() {
+  const [expandedPanel, setExpandedPanel] = useState(false);
+
   return (
     <div>
       <AccordionPanel
