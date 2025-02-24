@@ -2,12 +2,15 @@
 export default function AccordionPanel({
   title,
   children,
-  isExpanded
+  isExpanded,
+  onExpand
 }) {
 
   return (
     <section className="panel">
-      <button /* onClick={() => setIsExpanded(!isExpanded)}*/ >
+      <button
+        onClick = {() => onExpand()} /* OR onClick = {onExpand} */
+      >
         <h3>{title}</h3>
       </button>
       {isExpanded &&
