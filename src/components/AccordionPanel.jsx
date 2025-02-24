@@ -6,10 +6,10 @@ export default function AccordionPanel({
 
   return (
     <section className="panel">
-      <button onClick={() => setExpandedPanel(!expandedPanel)}>
+      <button onClick={() => setIsExpanded(!isExpanded)}>
         <h3>{title}</h3>
       </button>
-      {expandedPanel &&
+      {isExpanded &&
         <div className="content">{children}</div>}
     </section>
   );

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import AccordionPanel from './AccordionPanel'
 
 export default function Accordion() {
-  const [expandedPanel, setExpandedPanel] = useState(false);
+  const [expandedPanel, setExpandedPanel] = useState();
 
   return (
     <div>
